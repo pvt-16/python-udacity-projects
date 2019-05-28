@@ -8,6 +8,7 @@ def rename_files():
     print(list_path)
     for filename in list_path:
         new_filename = re.sub("\d+", " ", filename)
+        # filename.translate(None,"0123456789")
         print(new_filename)
         os.rename(path+ "\\" +filename, new_filename)
     
